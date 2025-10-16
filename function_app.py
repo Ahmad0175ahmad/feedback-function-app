@@ -56,7 +56,7 @@ def submit_feedback(req: func.HttpRequest) -> func.HttpResponse:
 
     except ValueError:
         return func.HttpResponse(
-            json.dumps({"error": "Invalid JSON format ok"}),
+            json.dumps({"error": "Invalid JSON format ok now"}),
             status_code=400,
             mimetype="application/json"
         )
